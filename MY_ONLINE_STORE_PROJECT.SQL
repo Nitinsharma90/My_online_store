@@ -180,5 +180,3 @@ BEGIN
     DELIMITER ;
     CALL CUSTOMER_DATA(1);
         
- 
-    
