@@ -132,7 +132,7 @@ count(o.order_id) as Total_count from orders o
 join customer_detail c on c.customer_id = o.customer_id
 group by 
  c.customer_id,c.customer_name
-having count(o.order_id )
+having count(o.order_id )>1
 order by Total_count desc;
 -- Unsold Products (In-Active Inventory)
 -- Business Requirement: Kya koi aisa product hai jo ab tak ek baar bhi nahi bika (orders table mein uski entry nahi hai)?
